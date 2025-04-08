@@ -9,7 +9,6 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 import time
 
-# 启用CPU多线程并设置随机种子
 torch.set_num_threads(8)
 torch.manual_seed(42)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
